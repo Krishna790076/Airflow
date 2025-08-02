@@ -1,0 +1,15 @@
+{"timestamp":"2025-07-17T06:19:00.053642","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-17T06:19:00.054758","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/fetch_cluster.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-17T06:19:00.099846Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:00.100500Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:00.101255Z","level":"info","event":"Current task name:get_cluster_id","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:00.101736Z","level":"info","event":"Dag name:get_databricks_cluster_id","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:00.133487","level":"info","event":"Connection Retrieved 'databricks_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-17T06:19:00.145822","level":"info","event":"Using token auth. For security reasons, please set token in Password field instead of extra","logger":"airflow.task.hooks.airflow.providers.databricks.hooks.databricks.DatabricksHook"}
+{"timestamp":"2025-07-17T06:19:08.539438","level":"error","event":"Attempt 1 API Request to Databricks failed with reason: <Future at 0x7ff7e1ea19d0 state=finished raised ConnectionError>","logger":"airflow.task.hooks.airflow.providers.databricks.hooks.databricks.DatabricksHook"}
+{"timestamp":"2025-07-17T06:19:11.445679Z","level":"info","event":"Error fetching clusters: Response: {\"error\":\"Bad Target: /api/api/2.0/clusters/list\"}","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:11.446345Z","level":"info","event":", Status Code: 404","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:11.445768","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-07-17T06:19:11.508359Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:11.512325Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:19:11.516681Z","level":"info","event":"Task operator:<Task(PythonOperator): get_cluster_id>","chan":"stdout","logger":"task"}

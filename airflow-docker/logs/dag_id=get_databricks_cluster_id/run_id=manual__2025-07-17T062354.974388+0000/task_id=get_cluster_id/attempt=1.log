@@ -1,0 +1,17 @@
+{"timestamp":"2025-07-17T06:23:56.291506","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-17T06:23:56.292241","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/fetch_cluster.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-17T06:23:56.354751Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.355492Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.356420Z","level":"info","event":"Current task name:get_cluster_id","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.356929Z","level":"info","event":"Dag name:get_databricks_cluster_id","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.372950","level":"info","event":"Connection Retrieved 'databricks_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-17T06:23:56.373825Z","level":"info","event":"Connection Host: https://dbc-c197be75-7f15.cloud.databricks.com","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.374265Z","level":"info","event":"Connection Type: databricks","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.374676Z","level":"info","event":"Has Password (token): False","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.375039Z","level":"info","event":"Base URL: https://dbc-c197be75-7f15.cloud.databricks.com","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:23:56.375397Z","level":"info","event":"Full API URL: https://dbc-c197be75-7f15.cloud.databricks.com/api/2.0/clusters/list","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:24:04.756150Z","level":"info","event":"Request Error: HTTPSConnectionPool(host='dbc-c197be75-7f15.cloud.databricks.com', port=443): Max retries exceeded with url: /api/2.0/clusters/list (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7ff7e1f225d0>: Failed to resolve 'dbc-c197be75-7f15.cloud.databricks.com' ([Errno -3] Temporary failure in name resolution)\"))","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:24:04.756321","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-07-17T06:24:04.823517Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:24:04.824313Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:24:04.829947Z","level":"info","event":"Task operator:<Task(PythonOperator): get_cluster_id>","chan":"stdout","logger":"task"}

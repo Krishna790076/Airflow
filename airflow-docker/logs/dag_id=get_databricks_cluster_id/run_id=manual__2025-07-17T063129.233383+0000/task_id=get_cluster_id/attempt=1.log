@@ -1,0 +1,17 @@
+{"timestamp":"2025-07-17T06:31:45.833965","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-17T06:31:45.835987","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/fetch_cluster.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-17T06:31:45.952998Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:45.956923Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:45.959050Z","level":"info","event":"Current task name:get_cluster_id","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:45.959778Z","level":"info","event":"Dag name:get_databricks_cluster_id","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:45.987546","level":"info","event":"Connection Retrieved 'databricks_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-17T06:31:45.991332Z","level":"info","event":"Base URL: https://dbc-c197be75-7f15.cloud.databricks.com","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:47.187798Z","level":"info","event":"DNS resolution successful for dbc-c197be75-7f15.cloud.databricks.com","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:47.188583Z","level":"info","event":"Full API URL: https://dbc-c197be75-7f15.cloud.databricks.com/api/2.0/clusters/list","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:50.036271Z","level":"info","event":"Status Code: 200","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:50.046279Z","level":"info","event":"Found 0 clusters","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:50.037464","level":"info","event":"Done. Returned value was: []","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-07-17T06:31:50.038051","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01981714-b31e-7d9f-a364-1de80943498c'), task_id='get_cluster_id', dag_id='get_databricks_cluster_id', run_id='manual__2025-07-17T06:31:29.233383+00:00', try_number=1, map_index=-1, hostname='95ec422441ab', context_carrier={}, task=<Task(PythonOperator): get_cluster_id>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 7, 17, 6, 31, 42, 370932, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/get_databricks_cluster_id/runs/manual__2025-07-17T06%3A31%3A29.233383%2B00%3A00/tasks/get_cluster_id?try_number=1')","logger":"task"}
+{"timestamp":"2025-07-17T06:31:50.149224Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:50.149827Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-17T06:31:50.150429Z","level":"info","event":"Task operator:<Task(PythonOperator): get_cluster_id>","chan":"stdout","logger":"task"}
